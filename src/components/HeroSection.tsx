@@ -25,9 +25,8 @@ const HeroSection = () => {
       <nav className="flex items-center justify-between px-5 md:px-10 py-4 md:py-5">
         <h2 className="font-display text-2xl md:text-4xl tracking-tight">ayna</h2>
         <a
-          href="https://aynaprotein.store/#comprar"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#comprar"
+          onClick={(e) => { e.preventDefault(); document.getElementById('comprar')?.scrollIntoView({ behavior: 'smooth' }); }}
           className="bg-foreground text-background px-4 md:px-6 py-2 md:py-2.5 text-[10px] md:text-xs tracking-[0.15em] uppercase font-medium hover:opacity-90 transition-opacity rounded-full"
         >
           comprar ayna
@@ -60,9 +59,8 @@ const HeroSection = () => {
                 </p>
 
                 <a
-                  href="https://aynaprotein.store/#comprar"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#comprar"
+                  onClick={(e) => { e.preventDefault(); document.getElementById('comprar')?.scrollIntoView({ behavior: 'smooth' }); }}
                   className="inline-block bg-primary text-primary-foreground px-8 md:px-10 py-3.5 md:py-4 text-sm tracking-[0.1em] font-medium hover:opacity-90 transition-opacity rounded-full"
                 >
                   comprar agora
