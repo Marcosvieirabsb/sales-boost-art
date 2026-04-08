@@ -23,7 +23,7 @@ const Index = () => {
       <FAQSection />
       <CTASection />
 
-      <footer className="py-12 md:py-16 px-5 md:px-6 text-center border-t border-border">
+      <footer className="py-12 md:py-16 px-5 md:px-6 text-center border-t border-border" role="contentinfo">
         <p className="font-display text-xl md:text-2xl mb-2 md:mb-3">ayna</p>
         <p className="text-[10px] md:text-xs tracking-[0.15em] uppercase text-muted-foreground mb-3 md:mb-4">
           Gomas proteicas premium
@@ -31,6 +31,7 @@ const Index = () => {
         <a
           href="mailto:ajuda@aynaprotein.com.br"
           className="text-[10px] md:text-xs text-muted-foreground underline"
+          aria-label="Enviar email para ajuda@aynaprotein.com.br"
         >
           ajuda@aynaprotein.com.br
         </a>
