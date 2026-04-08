@@ -1,47 +1,69 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import productJarsImg from "@/assets/product-jars.jpg";
+import productMorangoImg from "@/assets/product-morango.jpg";
+import productCarameloImg from "@/assets/product-caramelo.jpg";
 
 const plans = [
   {
-    id: "1-pote",
-    label: "1 Pote",
-    doses: "15 porções",
-    subtitle: "Experimente",
-    discount: "22% OFF",
-    originalPrice: "R$ 239",
-    installment: "12x de R$ 15,58",
-    cash: "R$ 187 à vista",
+    id: "morango",
+    label: "Morango",
+    doses: "15 doses · 1 pote",
+    subtitle: "Sabor clássico",
+    price: "R$ 187,00",
     url: "https://checkout.b4you.com.br/nTgLIX3MJ0?full_name=Cristiano%20Dias%20de%20Oliveira&email=cristiano21%40hotmail.com.br&sck=1773838906466",
+    image: productMorangoImg,
   },
   {
-    id: "2-potes",
-    label: "2 Potes",
-    doses: "30 porções",
-    subtitle: "Protocolo recomendado",
-    discount: "23% OFF",
-    originalPrice: "R$ 478",
-    installment: "12x de R$ 23,91",
-    cash: "R$ 287 à vista",
+    id: "caramelo-salgado",
+    label: "Caramelo Salgado",
+    doses: "15 doses · 1 pote",
+    subtitle: "Sabor irresistível",
+    price: "R$ 187,00",
     url: "https://aynaprotein.store/#comprar",
-    badge: "MAIS VENDIDO",
+    image: productCarameloImg,
   },
   {
-    id: "4-potes",
-    label: "4 Potes",
-    doses: "60 porções",
-    subtitle: "Protocolo intensivo",
-    discount: "30% OFF",
-    originalPrice: "R$ 956",
-    installment: "12x de R$ 44,91",
-    cash: "R$ 539 à vista",
+    id: "duo-degustacao",
+    label: "Duo Degustação",
+    doses: "15 + 15 doses",
+    subtitle: "Experimente os dois sabores",
+    price: "R$ 317,00",
+    url: "https://aynaprotein.store/#comprar",
+    image: productMorangoImg,
+  },
+  {
+    id: "kit-completo",
+    label: "Kit Completo",
+    doses: "30 + 30 doses",
+    subtitle: "Edição Especial",
+    price: "R$ 517,00",
     url: "https://aynaprotein.store/#comprar",
     badge: "MELHOR CUSTO",
+    image: productMorangoImg,
+  },
+  {
+    id: "irresistivel",
+    label: "Irresistível",
+    doses: "45 + 15 doses",
+    subtitle: "30 Morango + 15 Caramelo Salgado",
+    price: "R$ 417,00",
+    url: "https://aynaprotein.store/#comprar",
+    badge: "MAIS VENDIDO",
+    image: productMorangoImg,
+  },
+  {
+    id: "kit-especial",
+    label: "Kit Especial",
+    doses: "120 unidades",
+    subtitle: "Kit 3 Potes",
+    price: "R$ 747,00",
+    url: "https://aynaprotein.store/#comprar",
+    image: productCarameloImg,
   },
 ];
 
 const CTASection = () => {
-  const [selected, setSelected] = useState("2-potes");
+  const [selected, setSelected] = useState("irresistivel");
 
   const selectedPlan = plans.find((p) => p.id === selected)!;
 
@@ -72,8 +94,8 @@ const CTASection = () => {
             transition={{ duration: 0.8 }}
           >
             <img
-              src={productJarsImg}
-              alt="Potes AYNA — morango e caramelo salgado"
+              src={selectedPlan.image}
+              alt={`AYNA Whey Protein — ${selectedPlan.label}`}
               className="w-full max-w-sm md:max-w-lg mx-auto rounded-2xl"
             />
           </motion.div>
@@ -114,16 +136,7 @@ const CTASection = () => {
                     </p>
                   </div>
                   <div className="text-right">
-                    <span className="inline-block text-[9px] md:text-[10px] tracking-wide uppercase font-semibold text-primary bg-primary/10 px-2 py-0.5 rounded-full mb-0.5 md:mb-1">
-                      {plan.discount}
-                    </span>
-                    <p className="text-[11px] md:text-xs text-muted-foreground line-through">
-                      {plan.originalPrice}
-                    </p>
-                    <p className="text-xs md:text-sm font-semibold">{plan.installment}</p>
-                    <p className="text-[11px] md:text-xs text-muted-foreground">
-                      ou {plan.cash}
-                    </p>
+                    <p className="text-xs md:text-sm font-semibold">{plan.price}</p>
                   </div>
                 </div>
               </button>
