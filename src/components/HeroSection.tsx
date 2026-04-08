@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import lifestyleImg from "@/assets/lifestyle-moment.jpg";
+import logoAyna from "@/assets/logo-ayna.png";
 import gummiesCloseup from "@/assets/gummies-closeup.jpg";
 import flavorsImg from "@/assets/flavors-display.jpg";
 
@@ -23,7 +24,7 @@ const HeroSection = () => {
     <section>
       {/* Navbar */}
       <nav className="flex items-center justify-between px-5 md:px-10 py-4 md:py-5">
-        <h2 className="font-display text-2xl md:text-4xl tracking-tight">ayna</h2>
+        <img src={logoAyna} alt="AYNA" className="h-6 md:h-8 w-auto" />
         <a
           href="#comprar"
           onClick={(e) => { e.preventDefault(); document.getElementById('comprar')?.scrollIntoView({ behavior: 'smooth' }); }}
