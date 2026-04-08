@@ -8,6 +8,7 @@ import HowToUseSection from "@/components/HowToUseSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
+import logoAyna from "@/assets/logo-ayna.png";
 
 const Index = () => {
   return (
@@ -30,7 +31,7 @@ const Index = () => {
             
             {/* Brand */}
             <div className="md:col-span-1">
-              <p className="font-display text-2xl md:text-3xl mb-2">ayna</p>
+              <img src={logoAyna} alt="AYNA" className="h-6 md:h-8 w-auto mb-2" />
               <p className="text-xs text-muted-foreground leading-relaxed max-w-[200px]">
                 Seja sua própria inspiração.
               </p>
