@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
+import tabelaNutricional from "@/assets/tabela-nutricional.jpeg";
 
 const insideList = [
   "Zero açúcar, sem glúten",
@@ -17,6 +20,8 @@ const neverList = [
 ];
 
 const WhatsInsideSection = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <section className="py-16 md:py-32 px-5 md:px-6 bg-card">
       <div className="max-w-4xl mx-auto">
@@ -66,6 +71,34 @@ const WhatsInsideSection = () => {
             </ul>
           </div>
         </div>
+
+        {/* Botão Tabela Nutricional */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="flex justify-center mt-8 md:mt-12"
+        >
+          <button
+            onClick={() => setOpen(true)}
+            className="border border-foreground text-foreground px-6 md:px-8 py-2.5 md:py-3 text-[10px] md:text-xs tracking-[0.15em] uppercase font-medium hover:bg-foreground hover:text-background transition-colors rounded-full"
+          >
+            Tabela nutricional
+          </button>
+        </motion.div>
+
+        {/* Modal */}
+        <Dialog open={open} onOpenChange={setOpen}>
+          <DialogContent className="max-w-md md:max-w-lg p-2 md:p-4 max-h-[90vh] overflow-y-auto">
+            <DialogTitle className="sr-only">Tabela Nutricional AYNA</DialogTitle>
+            <img
+              src={tabelaNutricional}
+              alt="Tabela Nutricional AYNA Protein"
+              className="w-full h-auto rounded-lg"
+            />
+          </DialogContent>
+        </Dialog>
       </div>
     </section>
   );
