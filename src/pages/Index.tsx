@@ -3,6 +3,7 @@ import PainSection from "@/components/PainSection";
 import ProductSection from "@/components/ProductSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import ComparisonSection from "@/components/ComparisonSection";
+import ComparisonImageSection from "@/components/ComparisonImageSection";
 import WhatsInsideSection from "@/components/WhatsInsideSection";
 import HowToUseSection from "@/components/HowToUseSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -18,6 +19,7 @@ const Index = () => {
       <ProductSection />
       <BenefitsSection />
       <ComparisonSection />
+      <ComparisonImageSection />
       <WhatsInsideSection />
       <HowToUseSection />
       <TestimonialsSection />
