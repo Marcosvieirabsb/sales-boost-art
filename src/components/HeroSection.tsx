@@ -113,7 +113,7 @@ const HeroSection = () => {
         </div>
         <div className="aspect-[4/3] overflow-hidden rounded-lg md:rounded-xl">
           <img
-            src={flavorsImg}
+            src={gallery2}
             alt="Sabores AYNA"
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
             loading="lazy"
@@ -121,7 +121,7 @@ const HeroSection = () => {
         </div>
         <div className="aspect-[4/3] overflow-hidden rounded-lg md:rounded-xl">
           <img
-            src={lifestyleImg}
+            src={gallery3}
             alt="Lifestyle AYNA"
             className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
             loading="lazy"
