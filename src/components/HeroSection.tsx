@@ -115,7 +115,7 @@ const HeroSection = () => {
           <img
             src={gallery2}
             alt="Sabores AYNA"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+            className="w-full h-full object-cover object-[center_35%] hover:scale-105 transition-transform duration-500"
             loading="lazy"
           />
         </div>
