@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import lifestyleImg from "@/assets/lifestyle-moment.jpg";
 import logoAyna from "@/assets/logo-ayna.png";
-import gummiesCloseup from "@/assets/gummies-closeup.jpg";
-import flavorsImg from "@/assets/flavors-display.jpg";
+import gallery1 from "@/assets/gallery-1.jpg";
+import gallery2 from "@/assets/gallery-2.jpg";
+import gallery3 from "@/assets/gallery-3.jpg";
 
 const badges = [
   "12g de proteína",
@@ -104,7 +105,7 @@ const HeroSection = () => {
       <div className="grid grid-cols-3 gap-1 mt-1 px-3 md:px-6">
         <div className="aspect-[4/3] overflow-hidden rounded-lg md:rounded-xl">
           <img
-            src={gummiesCloseup}
+            src={gallery1}
             alt="Potes AYNA"
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
             loading="lazy"
@@ -112,7 +113,7 @@ const HeroSection = () => {
         </div>
         <div className="aspect-[4/3] overflow-hidden rounded-lg md:rounded-xl">
           <img
-            src={flavorsImg}
+            src={gallery2}
             alt="Sabores AYNA"
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
             loading="lazy"
@@ -120,7 +121,7 @@ const HeroSection = () => {
         </div>
         <div className="aspect-[4/3] overflow-hidden rounded-lg md:rounded-xl">
           <img
-            src={lifestyleImg}
+            src={gallery3}
             alt="Lifestyle AYNA"
             className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
             loading="lazy"
