@@ -82,7 +82,7 @@ const WhatsInsideSection = () => {
         >
           <button
             onClick={() => setOpen(true)}
-            className="border border-foreground text-foreground px-6 md:px-8 py-2.5 md:py-3 text-[10px] md:text-xs tracking-[0.15em] uppercase font-medium hover:bg-foreground hover:text-background transition-colors rounded-full"
+            className="bg-primary text-primary-foreground px-6 md:px-8 py-2.5 md:py-3 text-[10px] md:text-xs tracking-[0.15em] uppercase font-medium hover:opacity-90 transition-opacity rounded-full"
           >
             Tabela nutricional
           </button>
