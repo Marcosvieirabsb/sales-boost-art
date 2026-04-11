@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import lifestyleImg from "@/assets/lifestyle-moment.jpg";
 import logoAyna from "@/assets/logo-ayna.png";
-import gummiesCloseup from "@/assets/gummies-closeup.jpg";
-import flavorsImg from "@/assets/flavors-display.jpg";
+import gallery1 from "@/assets/gallery-1.jpg";
+import gallery2 from "@/assets/gallery-2.jpg";
+import gallery3 from "@/assets/gallery-3.jpg";
 
 const badges = [
   "12g de proteína",
