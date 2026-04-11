@@ -105,7 +105,7 @@ const HeroSection = () => {
       <div className="grid grid-cols-3 gap-1 mt-1 px-3 md:px-6">
         <div className="aspect-[4/3] overflow-hidden rounded-lg md:rounded-xl">
           <img
-            src={gummiesCloseup}
+            src={gallery1}
             alt="Potes AYNA"
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
             loading="lazy"
