@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import productMorangoImg from "@/assets/product-morango.jpg";
-import productCarameloImg from "@/assets/product-caramelo.jpg";
+import poteMorango from "@/assets/pote-morango-15-doses.png";
+import poteCaramelo from "@/assets/pote-caramelo-15-doses.png";
+import poteDuo from "@/assets/pote-duo-15-15-doses.png";
+import poteCompleto30 from "@/assets/pote-completo-30-30-doses.png";
+import poteIrresistivel from "@/assets/pote-irresistivel-45-15-doses.png";
+import poteCompleto120 from "@/assets/pote-completo-120-doses.png";
 
 const plans = [
   {
@@ -11,7 +15,7 @@ const plans = [
     subtitle: "Sabor clássico",
     price: "R$ 187,00",
     url: "https://checkout.b4you.com.br/HjH9Hh14N_",
-    image: productMorangoImg,
+    image: poteMorango,
   },
   {
     id: "caramelo-salgado",
@@ -20,7 +24,7 @@ const plans = [
     subtitle: "Sabor irresistível",
     price: "R$ 187,00",
     url: "https://checkout.b4you.com.br/xsHc6BUaqu",
-    image: productCarameloImg,
+    image: poteCaramelo,
   },
   {
     id: "duo-degustacao",
@@ -29,7 +33,7 @@ const plans = [
     subtitle: "Experimente os dois sabores",
     price: "R$ 317,00",
     url: "https://checkout.b4you.com.br/NiivV6jrrW",
-    image: productMorangoImg,
+    image: poteDuo,
   },
   {
     id: "kit-completo",
@@ -39,7 +43,7 @@ const plans = [
     price: "R$ 517,00",
     url: "https://checkout.b4you.com.br/yBRVXwEHJx",
     badge: "MELHOR CUSTO",
-    image: productMorangoImg,
+    image: poteCompleto30,
   },
   {
     id: "irresistivel",
@@ -49,7 +53,7 @@ const plans = [
     price: "R$ 417,00",
     url: "https://checkout.b4you.com.br/NiivV6jrrW",
     badge: "MAIS VENDIDO",
-    image: productMorangoImg,
+    image: poteIrresistivel,
   },
   {
     id: "kit-especial",
@@ -58,7 +62,7 @@ const plans = [
     subtitle: "Kit 3 Potes",
     price: "R$ 747,00",
     url: "https://checkout.b4you.com.br/6eRsOOaOzS_",
-    image: productCarameloImg,
+    image: poteCompleto120,
   },
 ];
 
