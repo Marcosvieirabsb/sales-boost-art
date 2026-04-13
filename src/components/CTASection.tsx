@@ -48,7 +48,7 @@ const plans = [
   {
     id: "irresistivel",
     label: "Irresistível",
-    doses: "45 + 15 doses",
+    doses: "30 + 15 doses",
     subtitle: "30 Morango + 15 Caramelo",
     price: "R$ 417,00",
     url: "https://checkout.b4you.com.br/NiivV6jrrW",
