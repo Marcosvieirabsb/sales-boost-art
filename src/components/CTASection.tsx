@@ -15,7 +15,7 @@ const plans = [
     subtitle: "Sabor clássico",
     price: "R$ 187,00",
     url: "https://checkout.b4you.com.br/HjH9Hh14N_",
-    image: productMorangoImg,
+    image: poteMorango,
   },
   {
     id: "caramelo-salgado",
@@ -24,7 +24,7 @@ const plans = [
     subtitle: "Sabor irresistível",
     price: "R$ 187,00",
     url: "https://checkout.b4you.com.br/xsHc6BUaqu",
-    image: productCarameloImg,
+    image: poteCaramelo,
   },
   {
     id: "duo-degustacao",
@@ -33,7 +33,7 @@ const plans = [
     subtitle: "Experimente os dois sabores",
     price: "R$ 317,00",
     url: "https://checkout.b4you.com.br/NiivV6jrrW",
-    image: productMorangoImg,
+    image: poteDuo,
   },
   {
     id: "kit-completo",
@@ -43,7 +43,7 @@ const plans = [
     price: "R$ 517,00",
     url: "https://checkout.b4you.com.br/yBRVXwEHJx",
     badge: "MELHOR CUSTO",
-    image: productMorangoImg,
+    image: poteCompleto30,
   },
   {
     id: "irresistivel",
@@ -53,7 +53,7 @@ const plans = [
     price: "R$ 417,00",
     url: "https://checkout.b4you.com.br/NiivV6jrrW",
     badge: "MAIS VENDIDO",
-    image: productMorangoImg,
+    image: poteIrresistivel,
   },
   {
     id: "kit-especial",
@@ -62,7 +62,7 @@ const plans = [
     subtitle: "Kit 3 Potes",
     price: "R$ 747,00",
     url: "https://checkout.b4you.com.br/6eRsOOaOzS_",
-    image: productCarameloImg,
+    image: poteCompleto120,
   },
 ];
 
