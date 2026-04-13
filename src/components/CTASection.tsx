@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import productMorangoImg from "@/assets/product-morango.jpg";
-import productCarameloImg from "@/assets/product-caramelo.jpg";
+import poteMorango from "@/assets/pote-morango-15-doses.png";
+import poteCaramelo from "@/assets/pote-caramelo-15-doses.png";
+import poteDuo from "@/assets/pote-duo-15-15-doses.png";
+import poteCompleto30 from "@/assets/pote-completo-30-30-doses.png";
+import poteIrresistivel from "@/assets/pote-irresistivel-45-15-doses.png";
+import poteCompleto120 from "@/assets/pote-completo-120-doses.png";
 
 const plans = [
   {
