@@ -7,105 +7,103 @@ import poteCompleto30 from "@/assets/pote-completo-30-30-doses.png";
 import poteIrresistivel from "@/assets/pote-irresistivel-45-15-doses.png";
 import poteCompleto120 from "@/assets/pote-completo-120-doses.png";
 
-const plans = [
+type Variant = {
+  id: string;
+  doses: string;
+  price: string;
+  url: string;
+};
+
+type Category = {
+  id: string;
+  label: string;
+  subtitle: string;
+  image: string;
+  badge?: string;
+  variants: Variant[];
+};
+
+const categories: Category[] = [
   {
     id: "morango",
     label: "Morango",
-    doses: "15 doses · 1 pote",
     subtitle: "Sabor clássico",
-    price: "R$ 187,00",
-    url: "https://checkout.b4you.com.br/HjH9Hh14N_",
     image: poteMorango,
+    variants: [
+      { id: "morango-15", doses: "15 doses · 1 pote", price: "R$ 187,00", url: "https://checkout.b4you.com.br/HjH9Hh14N_" },
+      { id: "morango-30", doses: "30 doses · 1 pote", price: "R$ 287,00", url: "https://checkout.b4you.com.br/cxy3vGXfct" },
+    ],
   },
   {
-    id: "morango-30",
-    label: "Morango",
-    doses: "30 doses · 1 pote",
-    subtitle: "Sabor clássico",
-    price: "R$ 287,00",
-    url: "https://checkout.b4you.com.br/cxy3vGXfct",
-    image: poteMorango,
-  },
-  {
-    id: "caramelo-salgado",
+    id: "caramelo",
     label: "Caramelo Salgado",
-    doses: "15 doses · 1 pote",
     subtitle: "Sabor irresistível",
-    price: "R$ 187,00",
-    url: "https://checkout.b4you.com.br/xsHc6BUaqu",
     image: poteCaramelo,
+    variants: [
+      { id: "caramelo-15", doses: "15 doses · 1 pote", price: "R$ 187,00", url: "https://checkout.b4you.com.br/xsHc6BUaqu" },
+      { id: "caramelo-30", doses: "30 doses · 1 pote", price: "R$ 287,00", url: "https://checkout.b4you.com.br/TPEIWvREQy" },
+    ],
   },
   {
-    id: "caramelo-salgado-30",
-    label: "Caramelo Salgado",
-    doses: "30 doses · 1 pote",
-    subtitle: "Sabor irresistível",
-    price: "R$ 287,00",
-    url: "https://checkout.b4you.com.br/TPEIWvREQy",
-    image: poteCaramelo,
-  },
-  {
-    id: "duo-degustacao",
+    id: "duo",
     label: "Duo Degustação",
-    doses: "15 + 15 doses",
     subtitle: "Experimente os dois sabores",
-    price: "R$ 317,00",
-    url: "https://checkout.b4you.com.br/NiivV6jrrW",
     image: poteDuo,
-  },
-  {
-    id: "kit-completo",
-    label: "Kit Completo",
-    doses: "30 + 30 doses",
-    subtitle: "Edição Especial",
-    price: "R$ 517,00",
-    url: "https://checkout.b4you.com.br/yBRVXwEHJx",
-    badge: "MELHOR CUSTO",
-    image: poteCompleto30,
+    variants: [
+      { id: "duo-15-15", doses: "15 + 15 doses", price: "R$ 317,00", url: "https://checkout.b4you.com.br/NiivV6jrrW" },
+    ],
   },
   {
     id: "irresistivel",
     label: "Irresistível",
-    doses: "30 + 15 doses",
-    subtitle: "30 Morango + 15 Caramelo",
-    price: "R$ 417,00",
-    url: "https://checkout.b4you.com.br/NiivV6jrrW",
+    subtitle: "Combo com 2 sabores: 30 doses de um sabor + 15 doses de outro",
+    image: poteIrresistivel,
     badge: "MAIS VENDIDO",
-    image: poteIrresistivel,
+    variants: [
+      { id: "irresistivel-morango", doses: "30 Morango + 15 Caramelo", price: "R$ 417,00", url: "https://checkout.b4you.com.br/NiivV6jrrW" },
+      { id: "irresistivel-caramelo", doses: "30 Caramelo + 15 Morango", price: "R$ 417,00", url: "https://checkout.b4you.com.br/pBov9AXATO" },
+    ],
   },
   {
-    id: "irresistivel-caramelo",
-    label: "Irresistível",
-    doses: "30 + 15 doses",
-    subtitle: "30 Caramelo + 15 Morango",
-    price: "R$ 417,00",
-    url: "https://checkout.b4you.com.br/pBov9AXATO",
-    image: poteIrresistivel,
+    id: "kit-completo",
+    label: "Kit Completo",
+    subtitle: "Edição Especial — 2 potes",
+    image: poteCompleto30,
+    badge: "MELHOR CUSTO",
+    variants: [
+      { id: "kit-completo-30-30", doses: "30 + 30 doses", price: "R$ 517,00", url: "https://checkout.b4you.com.br/yBRVXwEHJx" },
+    ],
   },
   {
-    id: "kit-especial-morango",
+    id: "kit-especial",
     label: "Kit Especial",
-    doses: "90 doses · 3 potes",
-    subtitle: "Kit 3 Potes Morango",
-    price: "R$ 747,00",
-    url: "https://checkout.b4you.com.br/6eRsOOaOzS",
+    subtitle: "Combo com 3 potes do mesmo sabor — 90 doses",
     image: poteCompleto120,
-  },
-  {
-    id: "kit-especial-caramelo",
-    label: "Kit Especial",
-    doses: "90 doses · 3 potes",
-    subtitle: "Kit 3 Potes Caramelo Salgado",
-    price: "R$ 747,00",
-    url: "https://checkout.b4you.com.br/183Q5Fdgkm",
-    image: poteCompleto120,
+    variants: [
+      { id: "kit-especial-morango", doses: "3 Potes Morango · 90 doses", price: "R$ 747,00", url: "https://checkout.b4you.com.br/6eRsOOaOzS" },
+      { id: "kit-especial-caramelo", doses: "3 Potes Caramelo Salgado · 90 doses", price: "R$ 747,00", url: "https://checkout.b4you.com.br/183Q5Fdgkm" },
+    ],
   },
 ];
 
 const CTASection = () => {
-  const [selected, setSelected] = useState("irresistivel");
+  const [selectedCategory, setSelectedCategory] = useState("irresistivel");
+  const [selectedVariants, setSelectedVariants] = useState<Record<string, string>>(() =>
+    Object.fromEntries(categories.map((c) => [c.id, c.variants[0].id]))
+  );
 
-  const selectedPlan = plans.find((p) => p.id === selected) ?? plans[0];
+  const category = categories.find((c) => c.id === selectedCategory) ?? categories[0];
+  const variant =
+    category.variants.find((v) => v.id === selectedVariants[category.id]) ?? category.variants[0];
+
+  const handleSelectCategory = (categoryId: string) => {
+    setSelectedCategory(categoryId);
+  };
+
+  const handleSelectVariant = (categoryId: string, variantId: string) => {
+    setSelectedCategory(categoryId);
+    setSelectedVariants((prev) => ({ ...prev, [categoryId]: variantId }));
+  };
 
   return (
     <section id="comprar" className="py-16 md:py-28 px-5 md:px-6">
@@ -132,13 +130,13 @@ const CTASection = () => {
             transition={{ duration: 0.8 }}
           >
             <img
-              src={selectedPlan.image}
-              alt={`AYNA Whey Protein — ${selectedPlan.label}`}
+              src={category.image}
+              alt={`AYNA Whey Protein — ${category.label}`}
               className="w-full max-w-sm md:max-w-lg mx-auto rounded-2xl"
             />
           </motion.div>
 
-          {/* Plans */}
+          {/* Categories */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -146,40 +144,60 @@ const CTASection = () => {
             transition={{ duration: 0.8 }}
             className="space-y-3 md:space-y-4 w-full"
           >
-            {plans.map((plan) => (
-              <button
-                key={plan.id}
-                onClick={() => setSelected(plan.id)}
-                className={`w-full text-left rounded-xl border-2 p-4 md:p-5 transition-all relative ${
-                  selected === plan.id
-                    ? "border-primary bg-primary/5"
-                    : "border-border hover:border-muted-foreground/40"
-                }`}
-              >
-                {plan.badge && (
-                  <span className="absolute -top-2.5 md:-top-3 left-4 md:left-5 bg-primary text-primary-foreground text-[9px] md:text-[10px] tracking-[0.12em] uppercase px-2.5 md:px-3 py-0.5 md:py-1 rounded-full font-medium">
-                    {plan.badge}
-                  </span>
-                )}
-                <div className="flex justify-between items-start">
-                  <div>
-                    <p className="text-sm font-semibold">
-                      {plan.label}
-                      <span className="font-normal text-muted-foreground ml-1.5 md:ml-2 text-[11px] md:text-xs">
-                        {plan.doses}
-                      </span>
+            {categories.map((cat) => {
+              const isActive = selectedCategory === cat.id;
+              const activeVariantId = selectedVariants[cat.id];
+              return (
+                <div
+                  key={cat.id}
+                  className={`rounded-xl border-2 transition-all relative ${
+                    isActive
+                      ? "border-primary bg-primary/5"
+                      : "border-border hover:border-muted-foreground/40"
+                  }`}
+                >
+                  {cat.badge && (
+                    <span className="absolute -top-2.5 md:-top-3 left-4 md:left-5 bg-primary text-primary-foreground text-[9px] md:text-[10px] tracking-[0.12em] uppercase px-2.5 md:px-3 py-0.5 md:py-1 rounded-full font-medium">
+                      {cat.badge}
+                    </span>
+                  )}
+                  <button
+                    onClick={() => handleSelectCategory(cat.id)}
+                    className="w-full text-left p-4 md:p-5"
+                  >
+                    <p className="text-sm font-semibold">{cat.label}</p>
+                    <p className="text-[11px] md:text-xs text-muted-foreground mt-0.5 md:mt-1">
+                      {cat.subtitle}
                     </p>
-                    <p className="text-[11px] md:text-xs text-muted-foreground mt-0.5 md:mt-1">{plan.subtitle}</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-xs md:text-sm font-semibold">{plan.price}</p>
-                  </div>
+                  </button>
+
+                  {isActive && (
+                    <div className="px-4 md:px-5 pb-4 md:pb-5 space-y-2">
+                      {cat.variants.map((v) => {
+                        const variantActive = activeVariantId === v.id;
+                        return (
+                          <button
+                            key={v.id}
+                            onClick={() => handleSelectVariant(cat.id, v.id)}
+                            className={`w-full text-left rounded-lg border p-3 transition-all flex justify-between items-center ${
+                              variantActive
+                                ? "border-primary bg-background"
+                                : "border-border hover:border-muted-foreground/40"
+                            }`}
+                          >
+                            <span className="text-[12px] md:text-xs">{v.doses}</span>
+                            <span className="text-xs md:text-sm font-semibold">{v.price}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
-              </button>
-            ))}
+              );
+            })}
 
             <a
-              href={selectedPlan.url}
+              href={variant.url}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 w-full bg-foreground text-background text-center px-8 md:px-10 py-3.5 md:py-4 text-sm tracking-[0.12em] uppercase font-medium rounded-full hover:opacity-90 transition-opacity mt-4 md:mt-6"
