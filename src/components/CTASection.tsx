@@ -105,6 +105,9 @@ const plans = [
 const CTASection = () => {
   const [selected, setSelected] = useState("irresistivel");
 
+  const selectedExists = plans.some((p) => p.id === selected);
+  const activeId = selectedExists ? selected : plans[0].id;
+
   const selectedPlan = plans.find((p) => p.id === selected)!;
 
   return (
