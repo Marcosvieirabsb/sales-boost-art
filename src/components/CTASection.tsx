@@ -190,7 +190,7 @@ const CTASection = () => {
                           <button
                             key={v.id}
                             onClick={() => handleSelectVariant(cat.id, v.id)}
-                            className={`w-full text-left rounded-lg border p-3 transition-all flex justify-between items-center ${
+                            className={`w-full text-left rounded-2xl border p-3 transition-all flex justify-between items-center ${
                               variantActive
                                 ? "border-primary bg-background"
                                 : "border-border hover:border-muted-foreground/40"
