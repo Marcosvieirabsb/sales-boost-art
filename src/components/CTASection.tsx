@@ -74,6 +74,15 @@ const plans = [
     image: poteIrresistivel,
   },
   {
+    id: "irresistivel-caramelo",
+    label: "Irresistível",
+    doses: "30 + 15 doses",
+    subtitle: "30 Caramelo + 15 Morango",
+    price: "R$ 417,00",
+    url: "https://checkout.b4you.com.br/pBov9AXATO",
+    image: poteIrresistivel,
+  },
+  {
     id: "kit-especial",
     label: "Kit Especial",
     doses: "120 unidades",
