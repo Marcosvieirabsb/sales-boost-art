@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import gummiesCloseup from "@/assets/gummies-closeup.jpg";
+import gummies800 from "@/assets/gummies-closeup-800.webp";
+import gummies1200 from "@/assets/gummies-closeup-1200.webp";
 
 const steps = [
   { num: "1", text: "Abra o pote e pegue 4 gomas" },
@@ -20,10 +21,15 @@ const HowToUseSection = () => {
             className="overflow-hidden w-full"
           >
             <img
-              src={gummiesCloseup}
+              src={gummies800}
+              srcSet={`${gummies800} 800w, ${gummies1200} 1200w`}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              width={1200}
+              height={1800}
               alt="Potes AYNA"
               className="w-full rounded-2xl"
               loading="lazy"
+              decoding="async"
             />
           </motion.div>
 
@@ -36,7 +42,7 @@ const HowToUseSection = () => {
             <h2 className="font-display text-3xl md:text-display-lg mb-4 md:mb-6">
               Pronto em 10 Segundos
             </h2>
-            <p className="text-sm text-muted-foreground mb-8 md:mb-10 max-w-sm">
+            <p className="text-sm text-foreground/70 mb-8 md:mb-10 max-w-sm">
               Seu ritual diário de proteína e prazer — quando e onde quiser.
             </p>
 

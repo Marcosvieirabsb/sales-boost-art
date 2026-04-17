@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
-import tabelaNutricional from "@/assets/tabela-nutricional.jpeg";
+import tabelaNutricional600 from "@/assets/tabela-nutricional-600.webp";
+import tabelaNutricional900 from "@/assets/tabela-nutricional-900.webp";
 
 const insideList = [
   "Zero açúcar, sem glúten",
@@ -93,9 +94,15 @@ const WhatsInsideSection = () => {
           <DialogContent className="max-w-md md:max-w-lg p-2 md:p-4 max-h-[90vh] overflow-y-auto">
             <DialogTitle className="sr-only">Tabela Nutricional AYNA</DialogTitle>
             <img
-              src={tabelaNutricional}
+              src={tabelaNutricional600}
+              srcSet={`${tabelaNutricional600} 600w, ${tabelaNutricional900} 900w`}
+              sizes="(max-width: 768px) 90vw, 500px"
+              width={900}
+              height={1564}
               alt="Tabela Nutricional AYNA Protein"
               className="w-full h-auto rounded-lg"
+              loading="lazy"
+              decoding="async"
             />
           </DialogContent>
         </Dialog>
