@@ -13,6 +13,7 @@ type Variant = {
   doses: string;
   price: string;
   url: string;
+  image?: string;
 };
 
 type Category = {
