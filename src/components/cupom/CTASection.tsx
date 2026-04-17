@@ -54,8 +54,8 @@ const categories: Category[] = [
     subtitle: "Sabor clássico",
     image: IMG_MORANGO,
     variants: [
-      { id: "morango-15", doses: "15 doses · 1 pote", price: "R$ 187,00", url: "https://pay.b4you.com.br/HjH9Hh14N_" },
-      { id: "morango-30", doses: "30 doses · 1 pote", price: "R$ 287,00", url: "https://pay.b4you.com.br/cxy3vGXfct" },
+      { id: "morango-15", doses: "15 doses · 1 pote", price: "R$ 187,00", url: "https://pay.b4you.com.br/2Z65L43Tjx" },
+      { id: "morango-30", doses: "30 doses · 1 pote", price: "R$ 287,00", url: "https://pay.b4you.com.br/zmmFw2LmVW" },
     ],
   },
   {
@@ -64,8 +64,8 @@ const categories: Category[] = [
     subtitle: "Sabor irresistível",
     image: IMG_CARAMELO,
     variants: [
-      { id: "caramelo-15", doses: "15 doses · 1 pote", price: "R$ 187,00", url: "https://pay.b4you.com.br/xsHc6BUaqu" },
-      { id: "caramelo-30", doses: "30 doses · 1 pote", price: "R$ 287,00", url: "https://pay.b4you.com.br/TPEIWvREQy" },
+      { id: "caramelo-15", doses: "15 doses · 1 pote", price: "R$ 187,00", url: "https://pay.b4you.com.br/zANZdBBR-m" },
+      { id: "caramelo-30", doses: "30 doses · 1 pote", price: "R$ 287,00", url: "https://pay.b4you.com.br/fvUva_3hES" },
     ],
   },
   {
@@ -74,7 +74,7 @@ const categories: Category[] = [
     subtitle: "Experimente os dois sabores",
     image: IMG_DUO,
     variants: [
-      { id: "duo-15-15", doses: "15 doses Morango + 15 doses Caramelo", price: "R$ 317,00", url: "https://pay.b4you.com.br/NiivV6jrrW" },
+      { id: "duo-15-15", doses: "15 doses Morango + 15 doses Caramelo", price: "R$ 317,00", url: "https://pay.b4you.com.br/GMZFI_blJZ" },
     ],
   },
   {
@@ -84,8 +84,8 @@ const categories: Category[] = [
     image: IMG_IRRESISTIVEL,
     badge: "MAIS VENDIDO",
     variants: [
-      { id: "irresistivel-morango", doses: "30 Morango + 15 Caramelo", price: "R$ 417,00", url: "https://pay.b4you.com.br/NiivV6jrrW" },
-      { id: "irresistivel-caramelo", doses: "30 Caramelo + 15 Morango", price: "R$ 417,00", url: "https://pay.b4you.com.br/pBov9AXATO" },
+      { id: "irresistivel-morango", doses: "30 Morango + 15 Caramelo", price: "R$ 417,00", url: "https://pay.b4you.com.br/P-F21cZcZc" },
+      { id: "irresistivel-caramelo", doses: "30 Caramelo + 15 Morango", price: "R$ 417,00", url: "https://pay.b4you.com.br/ldZbdBqJH0" },
     ],
   },
   {
@@ -95,7 +95,7 @@ const categories: Category[] = [
     image: IMG_COMPLETO30,
     badge: "MELHOR CUSTO",
     variants: [
-      { id: "kit-completo-30-30", doses: "30 doses Morango + 30 doses Caramelo", price: "R$ 517,00", url: "https://pay.b4you.com.br/yBRVXwEHJx" },
+      { id: "kit-completo-30-30", doses: "30 doses Morango + 30 doses Caramelo", price: "R$ 517,00", url: "https://pay.b4you.com.br/U_Y0b86vKn" },
     ],
   },
   {
@@ -104,8 +104,8 @@ const categories: Category[] = [
     subtitle: "Combo com 3 potes do mesmo sabor — 90 doses",
     image: IMG_COMPLETO120,
     variants: [
-      { id: "kit-especial-morango", doses: "3 Potes Morango · 90 doses", price: "R$ 747,00", url: "https://pay.b4you.com.br/6eRsOOaOzS" },
-      { id: "kit-especial-caramelo", doses: "3 Potes Caramelo Salgado · 90 doses", price: "R$ 747,00", url: "https://pay.b4you.com.br/183Q5Fdgkm", image: IMG_CARAMELO90 },
+      { id: "kit-especial-morango", doses: "3 Potes Morango · 90 doses", price: "R$ 747,00", url: "https://pay.b4you.com.br/lE3BFb4DUa" },
+      { id: "kit-especial-caramelo", doses: "3 Potes Caramelo Salgado · 90 doses", price: "R$ 747,00", url: "https://pay.b4you.com.br/aNQTMZVZ4W", image: IMG_CARAMELO90 },
     ],
   },
 ];
