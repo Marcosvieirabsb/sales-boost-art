@@ -6,6 +6,7 @@ import poteDuo from "@/assets/pote-duo-15-15-doses.png";
 import poteCompleto30 from "@/assets/pote-completo-30-30-doses.png";
 import poteIrresistivel from "@/assets/pote-irresistivel-45-15-doses.png";
 import poteCompleto120 from "@/assets/pote-completo-120-doses.png";
+import poteCaramelo90 from "@/assets/pote-caramelo-90-doses.png";
 
 type Variant = {
   id: string;
