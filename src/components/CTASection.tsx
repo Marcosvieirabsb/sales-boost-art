@@ -6,12 +6,14 @@ import poteDuo from "@/assets/pote-duo-15-15-doses.png";
 import poteCompleto30 from "@/assets/pote-completo-30-30-doses.png";
 import poteIrresistivel from "@/assets/pote-irresistivel-45-15-doses.png";
 import poteCompleto120 from "@/assets/pote-completo-120-doses.png";
+import poteCaramelo90 from "@/assets/pote-caramelo-90-doses.png";
 
 type Variant = {
   id: string;
   doses: string;
   price: string;
   url: string;
+  image?: string;
 };
 
 type Category = {
@@ -81,7 +83,7 @@ const categories: Category[] = [
     image: poteCompleto120,
     variants: [
       { id: "kit-especial-morango", doses: "3 Potes Morango · 90 doses", price: "R$ 747,00", url: "https://checkout.b4you.com.br/6eRsOOaOzS" },
-      { id: "kit-especial-caramelo", doses: "3 Potes Caramelo Salgado · 90 doses", price: "R$ 747,00", url: "https://checkout.b4you.com.br/183Q5Fdgkm" },
+      { id: "kit-especial-caramelo", doses: "3 Potes Caramelo Salgado · 90 doses", price: "R$ 747,00", url: "https://checkout.b4you.com.br/183Q5Fdgkm", image: poteCaramelo90 },
     ],
   },
 ];
@@ -130,7 +132,7 @@ const CTASection = () => {
             transition={{ duration: 0.8 }}
           >
             <img
-              src={category.image}
+              src={variant.image ?? category.image}
               alt={`AYNA Whey Protein — ${category.label}`}
               className="w-full max-w-sm md:max-w-lg mx-auto rounded-2xl"
             />
