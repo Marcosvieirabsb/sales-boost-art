@@ -105,7 +105,7 @@ const plans = [
 const CTASection = () => {
   const [selected, setSelected] = useState("irresistivel");
 
-  const selectedPlan = plans.find((p) => p.id === selected)!;
+  const selectedPlan = plans.find((p) => p.id === selected) ?? plans[0];
 
   return (
     <section id="comprar" className="py-16 md:py-28 px-5 md:px-6">
