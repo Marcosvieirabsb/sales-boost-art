@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import flavorsImg from "@/assets/flavors-display.jpg";
+import flavors800 from "@/assets/flavors-display-800.webp";
+import flavors1200 from "@/assets/flavors-display-1200.webp";
 
 const ProductSection = () => {
   return (
@@ -14,10 +15,15 @@ const ProductSection = () => {
           className="overflow-hidden min-h-[35vh] md:min-h-0"
         >
           <img
-            src={flavorsImg}
+            src={flavors800}
+            srcSet={`${flavors800} 800w, ${flavors1200} 1024w`}
+            sizes="(max-width: 768px) 100vw, 50vw"
+            width={1024}
+            height={1024}
             alt="Gomas AYNA de morango e caramelo salgado"
             className="w-full h-full object-cover"
             loading="lazy"
+            decoding="async"
           />
         </motion.div>
 
@@ -29,7 +35,7 @@ const ProductSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <p className="text-[10px] md:text-xs tracking-[0.2em] uppercase text-muted-foreground mb-4 md:mb-6">
+            <p className="text-[10px] md:text-xs tracking-[0.2em] uppercase text-foreground/65 mb-4 md:mb-6">
               O que é a AYNA
             </p>
             <h2 className="font-display text-3xl md:text-display-lg mb-6 md:mb-8">
@@ -37,7 +43,7 @@ const ProductSection = () => {
               <br />
               Não é barra de proteína.
             </h2>
-            <div className="space-y-3 md:space-y-4 text-sm text-muted-foreground leading-relaxed max-w-md">
+            <div className="space-y-3 md:space-y-4 text-sm text-foreground/70 leading-relaxed max-w-md">
               <p>
                 É uma goma de verdade — a mesma textura, o mesmo prazer, o
                 mesmo ritual de comer um docinho.
