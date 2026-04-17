@@ -1,14 +1,14 @@
-import HeroSection from "@/components/HeroSection";
-import PainSection from "@/components/PainSection";
-import ProductSection from "@/components/ProductSection";
-import BenefitsSection from "@/components/BenefitsSection";
-import ComparisonSection from "@/components/ComparisonSection";
-import ComparisonImageSection from "@/components/ComparisonImageSection";
-import WhatsInsideSection from "@/components/WhatsInsideSection";
-import HowToUseSection from "@/components/HowToUseSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import FAQSection from "@/components/FAQSection";
-import CTASection from "@/components/CTASection";
+import HeroSection from "@/components/cupom/HeroSection";
+import PainSection from "@/components/cupom/PainSection";
+import ProductSection from "@/components/cupom/ProductSection";
+import BenefitsSection from "@/components/cupom/BenefitsSection";
+import ComparisonSection from "@/components/cupom/ComparisonSection";
+import ComparisonImageSection from "@/components/cupom/ComparisonImageSection";
+import WhatsInsideSection from "@/components/cupom/WhatsInsideSection";
+import HowToUseSection from "@/components/cupom/HowToUseSection";
+import TestimonialsSection from "@/components/cupom/TestimonialsSection";
+import FAQSection from "@/components/cupom/FAQSection";
+import CTASection from "@/components/cupom/CTASection";
 import logoAyna from "@/assets/logo-ayna.png";
 
 const Index = () => {

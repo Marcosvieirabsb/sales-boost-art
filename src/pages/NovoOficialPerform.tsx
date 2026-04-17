@@ -1,14 +1,14 @@
-import HeroSection from "@/components/HeroSection";
-import PainSection from "@/components/PainSection";
-import ProductSection from "@/components/ProductSection";
-import BenefitsSection from "@/components/BenefitsSection";
-import ComparisonSection from "@/components/ComparisonSection";
-import ComparisonImageSection from "@/components/ComparisonImageSection";
-import WhatsInsideSection from "@/components/WhatsInsideSection";
-import HowToUseSection from "@/components/HowToUseSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import FAQSection from "@/components/FAQSection";
-import CTASection from "@/components/CTASection";
+import HeroSection from "@/components/novo-oficial-perform/HeroSection";
+import PainSection from "@/components/novo-oficial-perform/PainSection";
+import ProductSection from "@/components/novo-oficial-perform/ProductSection";
+import BenefitsSection from "@/components/novo-oficial-perform/BenefitsSection";
+import ComparisonSection from "@/components/novo-oficial-perform/ComparisonSection";
+import ComparisonImageSection from "@/components/novo-oficial-perform/ComparisonImageSection";
+import WhatsInsideSection from "@/components/novo-oficial-perform/WhatsInsideSection";
+import HowToUseSection from "@/components/novo-oficial-perform/HowToUseSection";
+import TestimonialsSection from "@/components/novo-oficial-perform/TestimonialsSection";
+import FAQSection from "@/components/novo-oficial-perform/FAQSection";
+import CTASection from "@/components/novo-oficial-perform/CTASection";
 import logoAyna from "@/assets/logo-ayna.png";
 
 const Index = () => {
