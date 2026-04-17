@@ -30,6 +30,20 @@ const badges = [
 
 const lifestyleSrcSet = `${lifestyle800} 800w, ${lifestyle1200} 1200w, ${lifestyle1600} 1600w`;
 
+// Inject preload for the LCP image as early as possible so it's discoverable in the initial document
+if (typeof document !== "undefined" && !document.getElementById("lcp-preload-lifestyle")) {
+  const link = document.createElement("link");
+  link.id = "lcp-preload-lifestyle";
+  link.rel = "preload";
+  link.as = "image";
+  link.type = "image/webp";
+  link.href = lifestyle1200;
+  link.setAttribute("imagesrcset", lifestyleSrcSet);
+  link.setAttribute("imagesizes", "(max-width: 768px) 100vw, 50vw");
+  link.setAttribute("fetchpriority", "high");
+  document.head.appendChild(link);
+}
+
 const HeroSection = () => {
   return (
     <section>
