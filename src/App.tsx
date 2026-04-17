@@ -4,6 +4,9 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
+import NovoOficialPerform from "./pages/NovoOficialPerform.tsx";
+import HomeOficialPerform from "./pages/HomeOficialPerform.tsx";
+import Cupom from "./pages/Cupom.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -16,9 +19,9 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/novo-oficial-perform" element={<Index />} />
-          <Route path="/home-oficial-perform" element={<Index />} />
-          <Route path="/cupom" element={<Index />} />
+          <Route path="/novo-oficial-perform" element={<NovoOficialPerform />} />
+          <Route path="/home-oficial-perform" element={<HomeOficialPerform />} />
+          <Route path="/cupom" element={<Cupom />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
