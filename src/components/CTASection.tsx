@@ -18,15 +18,6 @@ const plans = [
     image: poteMorango,
   },
   {
-    id: "caramelo-salgado",
-    label: "Caramelo Salgado",
-    doses: "15 doses · 1 pote",
-    subtitle: "Sabor irresistível",
-    price: "R$ 187,00",
-    url: "https://checkout.b4you.com.br/xsHc6BUaqu",
-    image: poteCaramelo,
-  },
-  {
     id: "morango-30",
     label: "Morango",
     doses: "30 doses · 1 pote",
@@ -34,6 +25,15 @@ const plans = [
     price: "R$ 287,00",
     url: "https://checkout.b4you.com.br/cxy3vGXfct",
     image: poteMorango,
+  },
+  {
+    id: "caramelo-salgado",
+    label: "Caramelo Salgado",
+    doses: "15 doses · 1 pote",
+    subtitle: "Sabor irresistível",
+    price: "R$ 187,00",
+    url: "https://checkout.b4you.com.br/xsHc6BUaqu",
+    image: poteCaramelo,
   },
   {
     id: "caramelo-salgado-30",
@@ -102,9 +102,7 @@ const CTASection = () => {
           <p className="text-[10px] md:text-xs tracking-[0.25em] uppercase text-muted-foreground mb-3 md:mb-4">
             Escolha seu protocolo
           </p>
-          <h2 className="font-display text-3xl md:text-display-lg">
-            Comece sua jornada
-          </h2>
+          <h2 className="font-display text-3xl md:text-display-lg">Comece sua jornada</h2>
         </motion.div>
 
         <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-16 items-center">
@@ -153,9 +151,7 @@ const CTASection = () => {
                         {plan.doses}
                       </span>
                     </p>
-                    <p className="text-[11px] md:text-xs text-muted-foreground mt-0.5 md:mt-1">
-                      {plan.subtitle}
-                    </p>
+                    <p className="text-[11px] md:text-xs text-muted-foreground mt-0.5 md:mt-1">{plan.subtitle}</p>
                   </div>
                   <div className="text-right">
                     <p className="text-xs md:text-sm font-semibold">{plan.price}</p>
