@@ -33,7 +33,7 @@ const Index = () => {
             
             {/* Brand */}
             <div className="md:col-span-1">
-              <img src={logoAyna} alt="AYNA" className="h-6 md:h-8 w-auto mb-2" />
+              <img src={logoAyna} alt="AYNA" width={446} height={142} loading="lazy" decoding="async" className="h-6 md:h-8 w-auto mb-2" />
               <p className="text-xs text-muted-foreground leading-relaxed max-w-[200px]">
                 Seja sua própria inspiração.
               </p>
