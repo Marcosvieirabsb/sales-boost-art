@@ -50,7 +50,7 @@ const categories: Category[] = [
     subtitle: "Experimente os dois sabores",
     image: poteDuo,
     variants: [
-      { id: "duo-15-15", doses: "15 + 15 doses", price: "R$ 317,00", url: "https://checkout.b4you.com.br/NiivV6jrrW" },
+      { id: "duo-15-15", doses: "15 doses Morango + 15 doses Caramelo", price: "R$ 317,00", url: "https://checkout.b4you.com.br/NiivV6jrrW" },
     ],
   },
   {
@@ -71,7 +71,7 @@ const categories: Category[] = [
     image: poteCompleto30,
     badge: "MELHOR CUSTO",
     variants: [
-      { id: "kit-completo-30-30", doses: "30 + 30 doses", price: "R$ 517,00", url: "https://checkout.b4you.com.br/yBRVXwEHJx" },
+      { id: "kit-completo-30-30", doses: "30 doses Morango + 30 doses Caramelo", price: "R$ 517,00", url: "https://checkout.b4you.com.br/yBRVXwEHJx" },
     ],
   },
   {
