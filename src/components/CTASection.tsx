@@ -130,7 +130,6 @@ const CTASection = () => {
             transition={{ duration: 0.8 }}
           >
             <img
-              key={category.id}
               src={category.image}
               alt={`AYNA Whey Protein — ${category.label}`}
               className="w-full max-w-sm md:max-w-lg mx-auto rounded-2xl"
