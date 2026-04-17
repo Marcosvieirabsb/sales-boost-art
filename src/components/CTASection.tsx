@@ -172,7 +172,7 @@ const CTASection = () => {
                     <div>
                       <p className="text-sm font-semibold">{cat.label}</p>
                       <p className="text-[11px] md:text-xs text-muted-foreground mt-0.5 md:mt-1">
-                        {cat.subtitle}
+                        {cat.variants.length === 1 ? cat.variants[0].doses : cat.subtitle}
                       </p>
                     </div>
                     {cat.variants.length === 1 && (
