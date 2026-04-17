@@ -162,16 +162,27 @@ const CTASection = () => {
                     </span>
                   )}
                   <button
-                    onClick={() => handleSelectCategory(cat.id)}
-                    className="w-full text-left p-4 md:p-5"
+                    onClick={() =>
+                      cat.variants.length === 1
+                        ? handleSelectVariant(cat.id, cat.variants[0].id)
+                        : handleSelectCategory(cat.id)
+                    }
+                    className="w-full text-left p-4 md:p-5 flex justify-between items-center gap-4"
                   >
-                    <p className="text-sm font-semibold">{cat.label}</p>
-                    <p className="text-[11px] md:text-xs text-muted-foreground mt-0.5 md:mt-1">
-                      {cat.subtitle}
-                    </p>
+                    <div>
+                      <p className="text-sm font-semibold">{cat.label}</p>
+                      <p className="text-[11px] md:text-xs text-muted-foreground mt-0.5 md:mt-1">
+                        {cat.subtitle}
+                      </p>
+                    </div>
+                    {cat.variants.length === 1 && (
+                      <span className="text-xs md:text-sm font-semibold whitespace-nowrap">
+                        {cat.variants[0].price}
+                      </span>
+                    )}
                   </button>
 
-                  {isActive && (
+                  {isActive && cat.variants.length > 1 && (
                     <div className="px-4 md:px-5 pb-4 md:pb-5 space-y-2">
                       {cat.variants.map((v) => {
                         const variantActive = activeVariantId === v.id;
