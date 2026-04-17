@@ -213,6 +213,16 @@ const CTASection = () => {
               href={variant.url}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => {
+                const w = window as unknown as { dataLayer?: Record<string, unknown>[] };
+                w.dataLayer = w.dataLayer || [];
+                w.dataLayer.push({
+                  event: "checkout_click",
+                  click_url: variant.url,
+                  product_name: `${category.label} — ${variant.doses}`,
+                  product_value: variant.price,
+                });
+              }}
               className="flex items-center justify-center gap-2 w-full bg-foreground text-background text-center px-8 md:px-10 py-3.5 md:py-4 text-sm tracking-[0.12em] uppercase font-medium rounded-full hover:opacity-90 transition-opacity mt-4 md:mt-6"
             >
               Comprar Agora
