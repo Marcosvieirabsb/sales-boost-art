@@ -83,7 +83,7 @@ const categories: Category[] = [
     image: poteCompleto120,
     variants: [
       { id: "kit-especial-morango", doses: "3 Potes Morango · 90 doses", price: "R$ 747,00", url: "https://checkout.b4you.com.br/6eRsOOaOzS" },
-      { id: "kit-especial-caramelo", doses: "3 Potes Caramelo Salgado · 90 doses", price: "R$ 747,00", url: "https://checkout.b4you.com.br/183Q5Fdgkm" },
+      { id: "kit-especial-caramelo", doses: "3 Potes Caramelo Salgado · 90 doses", price: "R$ 747,00", url: "https://checkout.b4you.com.br/183Q5Fdgkm", image: poteCaramelo90 },
     ],
   },
 ];
